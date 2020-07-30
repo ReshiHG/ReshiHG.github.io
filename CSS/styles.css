@@ -26,14 +26,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Barra de navegación */
+/* Barra de navegación 1 */
 
-.logo-img{
+/* .logo-img{
     height: 70px;
     float: left;
     padding: 10px 0 10px 20px;
-}
-
+} */
+/*
 nav>ul {
     list-style-type: none;
     margin: 0;
@@ -63,8 +63,60 @@ nav>ul {
 }
 .hamburger{
     display: none;
+} */
+
+/********************** Barra de navegación 2 *********************/
+
+.barraNavegación{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+    background-color:rgba(0,0,0,0.9);
+    height: 70px;
 }
 
+.barraNavegación>.barraNavegación1{
+    width: 30%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.logo>img{
+    height: 50px;
+    margin: 5px 0 5px 10px;
+}
+
+.barraNavegación>.barraNavegación2{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.enlace-header>a {
+    color: #FF4F00;
+    font-size: 20px;
+    padding: 25px 16px;
+    text-align: center;
+    text-decoration:none;
+}
+
+.enlace-header a:hover {
+    text-decoration: none;
+    background-color: #FF7800;
+    color: #FFFFFF;
+    border-radius: 18px 18px 0 0;
+    height: 70px;
+}
+
+.hamburger{
+    display: none;
+}
 /* Sobre mi */
 
 .Naranja{
@@ -78,12 +130,6 @@ nav>ul {
 .Blanco{
     background-color: white;
 }
-
-.logo>img{
-    height: 50px;
-    width: 50px;
-}
-
 .imagenPerfil>img{
     height: 200px;
     width: 200px;
