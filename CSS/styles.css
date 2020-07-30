@@ -12,3 +12,79 @@
               #757575
 
 */
+/*PALETAS
+    #03045E        #010B13
+    #0077B6        #FF4F00
+    #00B4D8        #FF7800
+    #90E0EF        #F8D568
+    #CAF0F8        #F8F8FF
+*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Barra de navegación */
+
+.logo-img{
+    height: 70px;
+    float: left;
+    padding: 10px 0 10px 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0,0,0,0.9);
+}
+
+.enlace-header {
+    float: right;
+}
+
+.enlace-header a {
+    color: #FF4F00;
+    display: block;
+    font-size: 20px;
+    padding: 20px 16px;
+    text-align: center;
+    text-decoration:none;
+}
+
+.enlace-header a:hover {
+    text-decoration: none;
+    background-color: #FF7800;
+    color: #FFFFFF;
+    border-radius: 18px 18px 0px 0px;
+}
+.hamburger{
+    display: none;
+}
+
+/* Sobre mi */
+
+.Naranja{
+    background-color: #FF7800;
+    height: 200px;
+}
+.Negro{
+    background-color: black;
+    height: 30px;
+}
+.Blanco{
+    background-color: white;
+}
+
+.logo>img{
+    height: 50px;
+    width: 50px;
+}
+
+.imagenPerfil>img{
+    height: 200px;
+    width: 200px;
+}
