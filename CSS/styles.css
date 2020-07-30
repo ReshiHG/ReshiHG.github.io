@@ -1,4 +1,3 @@
-
 /*Paleta
     https://material.io/resources/color/#!/?view.left=0&view.right=0&secondary.color=F44336&secondary.text.color=000000&primary.color=7E57C2
     Oscuro:   #26418f
@@ -27,7 +26,6 @@ body {
 }
 
 /* Barra de navegación 1 */
-
 /* .logo-img{
     height: 70px;
     float: left;
@@ -64,32 +62,30 @@ nav>ul {
 .hamburger{
     display: none;
 } */
-
 /********************** Barra de navegación 2 *********************/
-
-.barraNavegación{
+.barraNavegación {
     display: flex;
     margin: 0;
     padding: 0;
     overflow: hidden;
     align-items: center;
-    background-color:rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     height: 70px;
 }
 
-.barraNavegación>.barraNavegación1{
+.barraNavegación>.barraNavegación1 {
     width: 30%;
     justify-content: flex-start;
     margin: 0;
     padding: 0;
 }
 
-.logo>img{
+.logo>img {
     height: 50px;
     margin: 5px 0 5px 10px;
 }
 
-.barraNavegación>.barraNavegación2{
+.barraNavegación>.barraNavegación2 {
     width: 70%;
     display: flex;
     align-items: center;
@@ -103,7 +99,7 @@ nav>ul {
     font-size: 20px;
     padding: 25px 16px;
     text-align: center;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .enlace-header a:hover {
@@ -114,23 +110,34 @@ nav>ul {
     height: 70px;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
-/* Sobre mi */
 
-.Naranja{
+/* Sobre mi */
+.Naranja {
     background-color: #FF7800;
-    height: 200px;
+    height: 180px;
 }
-.Negro{
+
+.Negro {
     background-color: black;
     height: 30px;
 }
-.Blanco{
+
+.Blanco {
     background-color: white;
 }
-.imagenPerfil>img{
-    height: 200px;
-    width: 200px;
+
+.imagenPerfil {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.imagenPerfil>img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #000000;
 }
