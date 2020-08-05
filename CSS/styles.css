@@ -24,52 +24,39 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-/* Barra de navegación 1 */
-/* .logo-img{
-    height: 70px;
-    float: left;
-    padding: 10px 0 10px 20px;
-} */
-/*
-nav>ul {
-    list-style-type: none;
+h1,h2{
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:rgba(0,0,0,0.9);
+    font-family: 'Patua One', cursive;
+    color: #7DF9FF;
 }
 
-.enlace-header {
-    float: right;
-}
+/***************************** Contenedores ***********************************/
 
-.enlace-header a {
-    color: #FF4F00;
-    display: block;
-    font-size: 20px;
-    padding: 20px 16px;
-    text-align: center;
-    text-decoration:none;
-}
-
-.enlace-header a:hover {
-    text-decoration: none;
+.Naranja {
     background-color: #FF7800;
-    color: #FFFFFF;
-    border-radius: 18px 18px 0px 0px;
+    height: 180px;
 }
-.hamburger{
-    display: none;
-} */
-/********************** Barra de navegación 2 *********************/
+
+.contenedor1 {
+    background-color: #CAF0F8;
+    display: flex;
+    padding: 60px 120px;
+}
+
+.contenedor2{
+    background-color: #002366;
+    display: flex;
+    padding: 60px 120px;
+}
+
+/************************** Barra de navegación 2 *****************************/
 .barraNavegación {
     display: flex;
     margin: 0;
     padding: 0;
     overflow: hidden;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #002366;
     height: 70px;
 }
 
@@ -95,7 +82,7 @@ nav>ul {
 }
 
 .enlace-header>a {
-    color: #FF4F00;
+    color: #7DF9FF;
     font-size: 20px;
     padding: 25px 16px;
     text-align: center;
@@ -104,8 +91,8 @@ nav>ul {
 
 .enlace-header a:hover {
     text-decoration: none;
-    background-color: #FF7800;
-    color: #FFFFFF;
+    background-color: #7DF9FF;
+    color: #000000;
     border-radius: 18px 18px 0 0;
     height: 70px;
 }
@@ -114,20 +101,7 @@ nav>ul {
     display: none;
 }
 
-/* Sobre mi */
-.Naranja {
-    background-color: #FF7800;
-    height: 180px;
-}
-
-.Negro {
-    background-color: black;
-    height: 30px;
-}
-
-.Blanco {
-    background-color: white;
-}
+/* Encabezado */
 
 .imagenPerfil {
     position: absolute;
@@ -139,5 +113,38 @@ nav>ul {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    border: 10px solid #000000;
+    border: 10px solid  #002366;
 }
+
+/* Sobre Mi */
+
+.titulos{
+    background-color:  #002366;
+}
+
+.titulo-izquierda{
+    text-align: left;
+    padding: 0.2rem 30%;
+}
+.espacio{
+    width: 15%;
+}
+.sobreMi{
+    width: 85%;
+}
+
+.sobreMi>p{
+    font-size: 1.2rem;
+}
+
+/* Habilidades */
+
+.titulo-derecha{
+    text-align: right;
+    padding: 0.2rem 30%;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+/* Pasatiempos */
