@@ -32,11 +32,6 @@ h1,h2{
 
 /***************************** Contenedores ***********************************/
 
-.Naranja {
-    background-color: #FF7800;
-    height: 180px;
-}
-
 .contenedor1 {
     background-color: #CAF0F8;
     display: flex;
@@ -83,7 +78,7 @@ h1,h2{
 
 .enlace-header>a {
     color: #7DF9FF;
-    font-size: 20px;
+    font-size: 1.3rem;
     padding: 25px 16px;
     text-align: center;
     text-decoration: none;
@@ -93,7 +88,6 @@ h1,h2{
     text-decoration: none;
     background-color: #7DF9FF;
     color: #000000;
-    border-radius: 18px 18px 0 0;
     height: 70px;
 }
 
@@ -101,22 +95,39 @@ h1,h2{
     display: none;
 }
 
-/* Encabezado */
-
-.imagenPerfil {
-    position: absolute;
-    top: 110px;
-    left: 0;
+/******************************** Encabezado ***********************************/
+.contenedor{
+    height: 300px;
+}
+.contenedor>img{
+    width: 100%;
+    height: 100%;
 }
 
-.imagenPerfil>img {
-    height: 300px;
-    width: 300px;
+/********************************* Sobre Mi ************************************/
+
+.imagenIzquierda {
+    height: 0;
+}
+
+.imagenIzquierda>img {
+    height: 160px;
+    width: 160px;
+    background-color: #CAF0F8;
     border-radius: 50%;
     border: 10px solid  #002366;
+    position: relative;
+    left: 60px;
+    bottom: 60px;
 }
 
-/* Sobre Mi */
+#imagenPerfil{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 0;
+    bottom: 130px;
+}
 
 .titulos{
     background-color:  #002366;
@@ -124,27 +135,50 @@ h1,h2{
 
 .titulo-izquierda{
     text-align: left;
-    padding: 0.2rem 30%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 350px;
 }
 .espacio{
-    width: 15%;
+    width: 200px;
 }
 .sobreMi{
-    width: 85%;
+    width: 100%;
 }
 
 .sobreMi>p{
     font-size: 1.2rem;
 }
 
-/* Habilidades */
+/******************************** Habilidades ****************************/
+
+.imagenDerecha {
+    height: 0;
+}
+
+.imagenDerecha>img {
+    height: 160px;
+    width: 160px;
+    background-color: #CAF0F8;
+    border-radius: 50%;
+    border: 10px solid  #002366;
+    position: relative;
+    left: 80%;
+    bottom: 65px;
+}
 
 .titulo-derecha{
     text-align: right;
-    padding: 0.2rem 30%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-right: 350px;
 }
 
 .card{
     margin-bottom: 2rem;
+}
+
+.card:hover{
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
 }
 /* Pasatiempos */
