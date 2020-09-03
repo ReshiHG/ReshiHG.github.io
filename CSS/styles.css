@@ -30,6 +30,9 @@ h1,h2{
     font-family: 'Patua One', cursive;
     color: #7DF9FF;
 }
+p{
+    margin: 0;
+}
 
 /***************************** Contenedores ***********************************/
 
@@ -38,12 +41,7 @@ h1,h2{
     background-color: rgba(202, 240, 248,0.95);
     display: flex;
     padding: 60px 120px;
-}
-
-.contenedor2{
-    background-color: #002366;
-    display: flex;
-    padding: 60px 120px;
+    justify-content: space-evenly;
 }
 
 /************************** Barra de navegación 2 *****************************/
@@ -186,4 +184,44 @@ h1,h2{
 .card:hover{
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
 }
-/* Pasatiempos */
+/****************************** Proyectos *************************************/
+
+
+/***************************** Pasatiempos ************************************/
+
+/******************************** Footer **************************************/
+
+.contenedor2{
+    background-color: #002366;
+    /* display: flex; */
+    padding: 60px 120px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.partFooter{
+    /* background-color: white; */
+    /* height: 100px; */
+    text-align: center;
+    align-content: center;
+    color: #7DF9FF;
+    margin: 0.5rem 0;
+}
+
+#logoFooter{
+    display: flex;
+    align-items: center;
+}
+
+.itemFooter>img{
+    width: 5rem;
+    height: 5rem;
+}
+
+#logoNombre{
+    margin: 0 1rem;
+}
+
+.itemFooter>a{
+    margin: 0 0.5rem;
+}
