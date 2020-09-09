@@ -25,20 +25,21 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/abstract.jpg);
 }
-h1,h2{
+
+h1, h2 {
     margin: 0;
     font-family: 'Patua One', cursive;
     color: #7DF9FF;
 }
-p{
+
+p {
     margin: 0;
 }
 
 /***************************** Contenedores ***********************************/
-
 .contenedor1 {
     /* background-color: #CAF0F8; */
-    background-color: rgba(202, 240, 248,0.95);
+    background-color: rgba(202, 240, 248, 0.95);
     display: flex;
     padding: 60px 120px;
     justify-content: space-evenly;
@@ -97,17 +98,17 @@ p{
 }
 
 /******************************** Encabezado ***********************************/
-.contenedor{
+.contenedor {
     height: 300px;
 }
-.contenedor>img{
+
+.contenedor>img {
     width: 100%;
     height: 100%;
     display: none;
 }
 
 /********************************* Sobre Mi ************************************/
-
 .imagenIzquierda {
     height: 0;
 }
@@ -117,13 +118,13 @@ p{
     width: 160px;
     background-color: #CAF0F8;
     border-radius: 50%;
-    border: 10px solid  #002366;
+    border: 10px solid #002366;
     position: relative;
     left: 60px;
     bottom: 60px;
 }
 
-#imagenPerfil{
+#imagenPerfil {
     height: 300px;
     width: 300px;
     position: relative;
@@ -131,30 +132,31 @@ p{
     bottom: 130px;
 }
 
-.titulos{
-    background-color:  #002366;
+.titulos {
+    background-color: #002366;
     /* background-color: rgba(0, 35, 102, 0.8); */
 }
 
-.titulo-izquierda{
+.titulo-izquierda {
     text-align: left;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     padding-left: 350px;
 }
-.espacio{
+
+.espacio {
     width: 200px;
 }
-.sobreMi{
+
+.sobreMi {
     width: 100%;
 }
 
-.sobreMi>p{
+.sobreMi>p {
     font-size: 1.2rem;
 }
 
 /******************************** Habilidades ****************************/
-
 .imagenDerecha {
     height: 0;
 }
@@ -164,34 +166,107 @@ p{
     width: 160px;
     background-color: #CAF0F8;
     border-radius: 50%;
-    border: 10px solid  #002366;
+    border: 10px solid #002366;
     position: relative;
     left: 80%;
     bottom: 65px;
 }
 
-.titulo-derecha{
+.titulo-derecha {
     text-align: right;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     padding-right: 350px;
 }
 
-.card{
-    margin-bottom: 2rem;
-}
-
-.card:hover{
+.contenedor-card:hover .card {
+    transition: all ease 0.5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(180deg);
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
 }
+
+.card {
+    margin-bottom: 2rem;
+    transition: all ease 0.5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+.progress {
+    margin-top: 1rem;
+}
+
+.trasera {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.trasera>img {
+    height: 100%;
+    position: relative;
+    left: -150px;
+    /* visibility: hidden; */
+}
+
+.trasera-contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    color: #FFFAF0;
+}
+.trasera-contenido>h4{
+    font-weight: bold;
+}
+.tc1{
+    background: rgba(146, 175, 200, 0.75);
+    background: -moz-linear-gradient(top, rgba(146, 175, 200, 0.75) 0%, rgba(69, 61, 65, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(146, 175, 200, 0.75)), color-stop(100%, rgba(69, 61, 65, 1)));
+    background: -webkit-linear-gradient(top, rgba(146, 175, 200, 0.75) 0%, rgba(69, 61, 65, 1) 100%);
+    background: -o-linear-gradient(top, rgba(146, 175, 200, 0.75) 0%, rgba(69, 61, 65, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(146, 175, 200, 0.75) 0%, rgba(69, 61, 65, 1) 100%);
+    background: linear-gradient(to bottom, rgba(146, 175, 200, 0.75) 0%, rgba(69, 61, 65, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#92afc8', endColorstr='#453d41', GradientType=0);
+}
+
+.tc2{
+    background: rgba(209,213,202,0.75);
+    background: -moz-linear-gradient(top, rgba(209,213,202,0.75) 0%, rgba(60,69,67,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(209,213,202,0.75)), color-stop(100%, rgba(60,69,67,1)));
+    background: -webkit-linear-gradient(top, rgba(209,213,202,0.75) 0%, rgba(60,69,67,1) 100%);
+    background: -o-linear-gradient(top, rgba(209,213,202,0.75) 0%, rgba(60,69,67,1) 100%);
+    background: -ms-linear-gradient(top, rgba(209,213,202,0.75) 0%, rgba(60,69,67,1) 100%);
+    background: linear-gradient(to bottom, rgba(209,213,202,0.75) 0%, rgba(60,69,67,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d5ca', endColorstr='#3c4543', GradientType=0 );
+}
+.tc3{
+    color: #D3D3D3;
+    background: rgba(108,125,157,0.5);
+    background: -moz-linear-gradient(top, rgba(108,125,157,0.5) 0%, rgba(26,27,36,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(108,125,157,0.5)), color-stop(100%, rgba(26,27,36,1)));
+    background: -webkit-linear-gradient(top, rgba(108,125,157,0.5) 0%, rgba(26,27,36,1) 100%);
+    background: -o-linear-gradient(top, rgba(108,125,157,0.5) 0%, rgba(26,27,36,1) 100%);
+    background: -ms-linear-gradient(top, rgba(108,125,157,0.5) 0%, rgba(26,27,36,1) 100%);
+    background: linear-gradient(to bottom, rgba(108,125,157,0.5) 0%, rgba(26,27,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c7d9d', endColorstr='#1a1b24', GradientType=0 );
+
+}
 /****************************** Proyectos *************************************/
-
-
 /***************************** Pasatiempos ************************************/
-
 /******************************** Footer **************************************/
-
-.contenedor2{
+.contenedor2 {
     background-color: #002366;
     /* display: flex; */
     padding: 60px 120px;
@@ -199,7 +274,7 @@ p{
     /* flex-wrap: wrap; */
 }
 
-.partFooter{
+.partFooter {
     /* background-color: white; */
     /* height: 100px; */
     text-align: center;
@@ -208,20 +283,20 @@ p{
     margin: 0.5rem 0;
 }
 
-#logoFooter{
+#logoFooter {
     display: flex;
     align-items: center;
 }
 
-.itemFooter>img{
+.itemFooter>img {
     width: 5rem;
     height: 5rem;
 }
 
-#logoNombre{
+#logoNombre {
     margin: 0 1rem;
 }
 
-.itemFooter>a{
+.itemFooter>a {
     margin: 0 0.5rem;
 }
