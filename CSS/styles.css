@@ -194,9 +194,9 @@ p {
     transform: perspective(600px) rotateY(0deg);
 }
 
-.card:hover {
+/* .card:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
-}
+} */
 
 .progress {
     margin-top: 1rem;
