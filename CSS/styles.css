@@ -267,23 +267,32 @@ p {
 .contenedor-acordeon{
     margin-bottom: 2rem;
 }
-#headingE,#headingDW,#headingT{
-    background-color: #002366;
-    margin:0;
-}
+
 .acordeonTitulo{
-    color: #7DF9FF;
-    font-size: 1.3rem;
+    background-color: #002366;
 }
-.acordeonTitulo:hover{
+.acordeonTitulo>a{
+    text-decoration: none;
     color: #7DF9FF;
-    margin: none;
+    text-align: center;
 }
-/* .imgEcualizador{
-    display:flex;
-} */
-.imgEcualizador>img{
-    padding-top: 30px;
+.acordeonTitulo>a>h3{
+    padding: 10px 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.acordeonTitulo2{
+    background-color: #F7F7F7;
+}
+.acordeonTitulo2>a{
+    text-decoration: none;
+    color: #070707;
+    text-align: center;
+}
+.acordeonTitulo2>a>h5{
+    padding: 10px 0;
+    margin: 0;
 }
 /***************************** Pasatiempos ************************************/
 /******************************** Footer **************************************/
