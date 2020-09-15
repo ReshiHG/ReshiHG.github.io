@@ -301,7 +301,11 @@ p {
 
 .img-p>img{
     margin: 10px 0;
-    border-radius: 5%;
+    border-radius: 10%;
+}
+#img-p-tindog>img{
+    border-radius: 0;
+    height: 100%;
 }
 /***************************** Pasatiempos ************************************/
 /******************************** Footer **************************************/
