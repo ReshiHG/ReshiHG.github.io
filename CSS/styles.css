@@ -263,7 +263,11 @@ p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c7d9d', endColorstr='#1a1b24', GradientType=0 );
 
 }
+
+
 /****************************** Proyectos *************************************/
+
+
 .contenedor-acordeon{
     margin-bottom: 2rem;
 }
@@ -293,6 +297,11 @@ p {
 .acordeonTitulo2>a>h5{
     padding: 10px 0;
     margin: 0;
+}
+
+.img-p>img{
+    margin: 10px 0;
+    border-radius: 5%;
 }
 /***************************** Pasatiempos ************************************/
 /******************************** Footer **************************************/
