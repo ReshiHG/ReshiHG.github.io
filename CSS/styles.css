@@ -274,6 +274,16 @@ p {
 
 .acordeonTitulo{
     background-color: #002366;
+    /* border-radius: 8px; */
+    border: 1.3px solid #00153D;
+}
+.acordeonTituloTop{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.acordeonTituloBot{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .acordeonTitulo>a{
     text-decoration: none;
