@@ -310,7 +310,8 @@
                     </div>
                     <div class="collapse show acordeonContenido2" id="proyectoT1">
                         <div class="card card-body">
-                            <p class="card-text">Simulación de la implementación de una red en una empresa con sus diferentes departamentos, en donde se configurarón los diferentes equipos de red para que se puedan comunicar ciertos departamentos entre si.</p>
+                            <p class="card-text">Simulación de la implementación de una red en una empresa con sus diferentes departamentos, en donde se configurarón los diferentes equipos de red para que se puedan comunicar ciertos departamentos
+                                entre si.</p>
                             <div class="row justify-content-center">
                                 <div class="img-p col-lg-6 col-md-12 col-sm-12">
                                     <img src="img/red-empresa.png" alt="red de la empresa" title="Configuración lógica de la red">
@@ -345,7 +346,7 @@
         </div>
         <div class="contenedor1">
             <div class="contenedorPasatiempos">
-                <div class="pasatiempo huerto row">
+                <div class="pasatiempo row">
                     <div class="pasatiempoDescripcion col-lg-6 col-md-6 col-sm-12">
                         <div class="pasatiempoTexto" id="huertoTexto">
                             <h3>Huerto</h3>
@@ -355,16 +356,55 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="pasatiempoImagen">
-                            <img src="img/huerto-melon.jpg" alt="Melón">
+                    <div class="col-lg-6 col-md-6 col-sm-12 carrusel">
+                        <div id="carouselHuerto" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="5000">
+                                    <img src="img/huerto-melon.jpg" class="d-block w-100" alt="Melón creciendo">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/huerto-flor.png" class="d-block w-100" alt="Flor">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/huerto-jitomates-cosecha.jpg" class="d-block w-100" alt="Jitomates cosechados">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselHuerto" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previo</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselHuerto" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="pasatiempo row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="pasatiempoImagen">
-                            <img src="img/huerto-melon.jpg" alt="Melón">
+                    <div class="col-lg-6 col-md-6 col-sm-12 carrusel">
+                        <div id="carouselPeliculas" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="5000">
+                                    <img src="img/peli-interstellar.png" class="d-block w-100" alt="Película Interstellar">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/peli-the-half-of-it.png" class="d-block w-100" alt="Película Si supieras">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/peli-in-the-tall-grass.png" class="d-block w-100" alt="Película En la hierba alta">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/peli-sicario-2.png" class="d-block w-100" alt="Película Sicario: Día del soldado">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselPeliculas" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previo</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselPeliculas" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="pasatiempoDescripcion col-lg-6 col-md-6 col-sm-12">
@@ -376,7 +416,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pasatiempo huerto row">
+                <div class="pasatiempo row">
                     <div class="pasatiempoDescripcion col-lg-6 col-md-6 col-sm-12">
                         <div class="pasatiempoTexto" id="huertoTexto">
                             <h3>Videojuegos</h3>
@@ -385,16 +425,64 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="pasatiempoImagen">
-                            <img src="img/huerto-melon.jpg" alt="Melón">
+                    <div class="col-lg-6 col-md-6 col-sm-12 carrusel">
+                        <div id="carouselVideojuegos" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="5000">
+                                    <img src="img/videojuego-xcom2.jpeg" class="d-block w-100" alt="Xcom 2">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/videojuego-bbt.jpg" class="d-block w-100" alt="Battle Block Theather">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/videojuego-ds2.jpg" class="d-block w-100" alt="Dark Souls 2">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img/videojuego-ds3.jpg" class="d-block w-100" alt="Dead Space 3">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselVideojuegos" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previo</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselVideojuegos" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="pasatiempo row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="pasatiempoImagen">
-                            <img src="img/huerto-melon.jpg" alt="Melón">
+                    <div class="col-lg-6 col-md-6 col-sm-12 carrusel">
+                        <div id="carouselLibros" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="5000">
+                                    <img src="img\libro-el-temor-de-un-hombre-sabio.png" class="d-block w-100" alt="El temor de un hombre sabio">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img\libro-la-soledad-de-los-numeros-primos.png" class="d-block w-100" alt="La soledad de los números primos">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img\libro-kafka-en-la-orilla.png" class="d-block w-100" alt="Kafka en la orilla">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img\libro-el-caso-de-charles-dexter-ward.png" class="d-block w-100" alt="El caso de Charles Dexter Ward">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img\libro-el-color-de-la-magia.png" class="d-block w-100" alt="El color de la magia">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="img\libro-neverwhere.png" class="d-block w-100" alt="Neverwhere">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselLibros" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previo</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselLibros" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="pasatiempoDescripcion col-lg-6 col-md-6 col-sm-12">

@@ -322,11 +322,11 @@ p {
 }
 /***************************** Pasatiempos ************************************/
 .contenedorPasatiempos{
-    background-color: #000;
+
 }
 .pasatiempo{
-    background-color: #ffffff;
     /* border: 8px solid #002366; */
+    background-color: #f7f7f7;
 }
 .pasatiempoDescripcion{
     display: flex;
@@ -340,8 +340,13 @@ p {
 }
 .pasatiempoTexto>p{
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 13pt;
 
+}
+.carrusel{
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .pasatiempoImagen{
     padding: 15px;
@@ -354,12 +359,12 @@ p {
 .huerto{
     background-color: #666C3F;
 }
-#huertoTexto>h3{
+/* #huertoTexto>h3{
     color: #F8F8FF;
 }
 #huertoTexto>p{
     color: #8DD9CC;
-}
+} */
 
 /******************************** Footer **************************************/
 .contenedor2 {
