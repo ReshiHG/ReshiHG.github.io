@@ -308,16 +308,59 @@ p {
     padding: 10px 0;
     margin: 0;
 }
-
+.img-p{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 .img-p>img{
-    margin: 10px 0;
-    border-radius: 10%;
+    width: 100%;
+    border-radius: 15px;
 }
 #img-p-tindog>img{
-    border-radius: 0;
     height: 100%;
 }
 /***************************** Pasatiempos ************************************/
+.contenedorPasatiempos{
+    background-color: #000;
+}
+.pasatiempo{
+    background-color: #ffffff;
+    /* border: 8px solid #002366; */
+}
+.pasatiempoDescripcion{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+.pasatiempoTexto>h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.pasatiempoTexto>p{
+    font-weight: bold;
+    font-size: 14pt;
+
+}
+.pasatiempoImagen{
+    padding: 15px;
+}
+.pasatiempoImagen>img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.huerto{
+    background-color: #666C3F;
+}
+#huertoTexto>h3{
+    color: #F8F8FF;
+}
+#huertoTexto>p{
+    color: #8DD9CC;
+}
+
 /******************************** Footer **************************************/
 .contenedor2 {
     background-color: #002366;
