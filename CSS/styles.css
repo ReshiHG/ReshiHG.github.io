@@ -88,9 +88,8 @@ p {
 
 .enlace-header a:hover {
     text-decoration: none;
-    background-color: #7DF9FF;
-    color: #000000;
     height: 70px;
+    font-weight: bold;
 }
 
 .hamburger {
@@ -327,12 +326,14 @@ p {
 .pasatiempo{
     /* border: 8px solid #002366; */
     background-color: #f7f7f7;
+    border: 1.3px solid #000;
 }
 .pasatiempoDescripcion{
     display: flex;
     align-items: center;
     padding: 30px;
     text-align: center;
+    /* border: 1.5px solid #000; */
 }
 .pasatiempoTexto>h3{
     font-weight: bold;
@@ -347,6 +348,7 @@ p {
     padding: 0;
     margin-top: auto;
     margin-bottom: auto;
+    /* border: 1.5px solid #000; */
 }
 .pasatiempoImagen{
     padding: 15px;
