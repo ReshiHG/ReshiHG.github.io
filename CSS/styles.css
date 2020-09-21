@@ -66,7 +66,7 @@ p {
 
 .logo>img {
     height: 50px;
-    margin: 5px 0 5px 10px;
+    margin: auto 0 auto 10px;
 }
 
 .barraNavegación>.barraNavegación2 {
@@ -141,7 +141,7 @@ p {
     text-align: left;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    padding-left: 350px;
+    padding-left: 27%;
 }
 
 .sobreMi {
@@ -158,6 +158,9 @@ p {
 /******************************** Habilidades ****************************/
 .imagenDerecha {
     height: 0;
+    position: relative;
+    left: 100%;
+    /* Posiciona el contenedor en el margen derecho de la pantalla */
 }
 
 .imagenDerecha>img {
@@ -167,7 +170,8 @@ p {
     border-radius: 50%;
     border: 10px solid #002366;
     position: relative;
-    left: 80%;
+    /* left: 80%; */
+    right: 190px;
     bottom: 65px;
 }
 
@@ -175,7 +179,7 @@ p {
     text-align: right;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
-    padding-right: 350px;
+    padding-right: 25%;
 }
 .contenedor-card{
     margin-bottom: 2rem;
@@ -402,10 +406,82 @@ p {
 
 .itemFooter>a {
     margin: 0 0.5rem;
+    color: #007bff;
 }
 
+
+/****************************** Responsive Design ****************************/
+
 @media screen and (max-width:600px){
+    /***************************** Contenedores *******************************/
+    .contenedor1 {
+        padding: 70px 30px;
+    }
+
+    /******************************** Navbar **********************************/
+    .barraNavegación>.barraNavegación2 {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end
+        margin: 0;
+        padding: 0;
+    }
     .enlace-header>a{
         display: none;
     }
+    .hamburger {
+        display:block;
+        padding-right: 30px;
+    }
+    /******************************** Encabezado ***********************************/
+    .contenedor {
+        height: 200px;
+    }
+    /********************************* Sobre Mi ************************************/
+    .imagenIzquierda>img {
+        border: 8px solid #002366;
+        left: 10px;
+        bottom: 60px;
+    }
+
+    #imagenPerfil {
+        height: 200px;
+        width: 200px;
+        left: 10px;
+        bottom: 80px;
+    }
+
+    .titulo-izquierda {
+        text-align: right;
+        padding: 0.2rem 30px 0.2rem 0;
+        font-size: 2.2rem;
+    }
+
+    .sobreMi>p {
+        padding-left: 0;
+    }
+
+    /******************************** Habilidades ****************************/
+    .imagenDerecha>img {
+        right: 170px;
+    }
+
+    .titulo-derecha {
+        text-align: left;
+        padding: 0.2rem 0 0.2rem 30px;
+    }
+    /* #voltear-card:active .card {
+        transition: all ease 0.5s;
+        transform-style: preserve-3d;
+        transform: perspective(600px) rotateY(180deg);
+    } */
+
+    /******************************* Pasatiempos *******************************/
+
+    .pasatiempo-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 }
