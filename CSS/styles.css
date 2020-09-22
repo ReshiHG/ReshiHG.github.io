@@ -415,7 +415,7 @@ p {
 @media screen and (max-width:600px){
     /***************************** Contenedores *******************************/
     .contenedor1 {
-        padding: 70px 30px;
+        padding: 50px 30px;
     }
 
     /******************************** Navbar **********************************/
@@ -481,7 +481,7 @@ p {
     .titulo-derecha {
         text-align: left;
         padding: 0.2rem 0 0.2rem 30px;
-        margin-right: 130px;    
+        margin-right: 130px;
         /* font-size: 1.5rem; */
     }
     /* #voltear-card:active .card {
@@ -497,4 +497,8 @@ p {
         flex-direction: column-reverse;
     }
 
+    /********************************* Footer *********************************/
+    .contenedor2 {
+        padding: 60px 30px;
+    }
 }
