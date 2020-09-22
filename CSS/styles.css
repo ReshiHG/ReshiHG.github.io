@@ -158,8 +158,10 @@ p {
 /******************************** Habilidades ****************************/
 .imagenDerecha {
     height: 0;
+    width: 0;
     position: relative;
     left: 100%;
+    bottom: 65px;
     /* Posiciona el contenedor en el margen derecho de la pantalla */
 }
 
@@ -169,10 +171,8 @@ p {
     background-color: #CAF0F8;
     border-radius: 50%;
     border: 10px solid #002366;
-    position: relative;
-    /* left: 80%; */
-    right: 190px;
-    bottom: 65px;
+    position: absolute;
+    right: 30px;
 }
 
 .titulo-derecha {
@@ -410,7 +410,7 @@ p {
 }
 
 
-/****************************** Responsive Design ****************************/
+/****************************** RESPONSIVE DESIGN ****************************/
 
 @media screen and (max-width:600px){
     /***************************** Contenedores *******************************/
@@ -440,22 +440,25 @@ p {
     }
     /********************************* Sobre Mi ************************************/
     .imagenIzquierda>img {
+        height: 120px;
+        width: 120px;
         border: 8px solid #002366;
         left: 10px;
-        bottom: 60px;
+        bottom: 42px;
     }
 
     #imagenPerfil {
-        height: 200px;
-        width: 200px;
+        height: 160px;
+        width: 160px;
         left: 10px;
-        bottom: 80px;
+        bottom: 65px;
     }
 
     .titulo-izquierda {
         text-align: right;
         padding: 0.2rem 30px 0.2rem 0;
-        font-size: 2.2rem;
+        margin-left: 170px;
+        /* font-size: 1.5rem; */
     }
 
     .sobreMi>p {
@@ -463,13 +466,23 @@ p {
     }
 
     /******************************** Habilidades ****************************/
+    .imagenDerecha {
+        bottom: 42px;
+        /* Posiciona el contenedor en el margen derecho de la pantalla */
+    }
+
     .imagenDerecha>img {
-        right: 170px;
+        height: 120px;
+        width: 120px;
+        border: 8px solid #002366;
+        right: 10px;
     }
 
     .titulo-derecha {
         text-align: left;
         padding: 0.2rem 0 0.2rem 30px;
+        margin-right: 130px;    
+        /* font-size: 1.5rem; */
     }
     /* #voltear-card:active .card {
         transition: all ease 0.5s;
