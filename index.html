@@ -18,28 +18,28 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
-<body>
+<body id="body">
     <header>
         <!------------------------------ Barra de navegación 2 ------------------------>
 
-        <nav class="barraNavegación">
-            <div class="barraNavegación1">
+        <nav class="barraNavegación nav">
+
                 <div class="logo">
-                    <img src="img/JR_logo2.svg" alt="Logo Jorge Ricardo">
+                    <a href="#body">
+                        <img src="img/JR_logo2.svg" alt="Logo Jorge Ricardo">
+                    </a>
                 </div>
-            </div>
-            <div class="barraNavegación2">
-                <div class="enlace-header">
-                    <a href="#Inicio">Inicio</a>
-                    <a href="#Habilidades">Habilidades</a>
-                    <a href="#Proyectos">Proyectos</a>
-                    <a href="#Pasatiempos">Pasatiempos</a>
-                    <a href="#Footer">Contacto</a>
+                <div class="enlace-header" id="menu">
+                    <!-- <a href="#Inicio">Inicio</a> -->
+                    <a class="menuItem" href="#Habilidades">Habilidades</a>
+                    <a class="menuItem" href="#Proyectos">Proyectos</a>
+                    <a class="menuItem" href="#Pasatiempos">Pasatiempos</a>
+                    <a class="menuItem" href="#Footer">Contacto</a>
                 </div>
-                <div class="hamburger">
+                <div class="hamburger" id="menuHamburger">
                     <i class="fas fa-bars fa-2x"></i>
                 </div>
-            </div>
+
         </nav>
 
         <div class="contenedor">
