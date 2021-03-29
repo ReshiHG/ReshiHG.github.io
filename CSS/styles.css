@@ -316,8 +316,7 @@ nav .enlace-header{
 }
 
 .button-enlace{
-    text-decoration: none;
-    background-color: inherit;
+    display: none;
 }
 
 /***************************** Pasatiempos ************************************/
