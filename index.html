@@ -192,11 +192,11 @@
             <div class="contenedor-acordeon" id="acordeon1">
 
                 <div class="acordeonTitulo acordeonTituloTop">
-                    <a data-toggle="collapse" href="#proyectoE" aria-expanded="true" role="button" aria-controls="proyectoE">
+                    <a class="collapsed" data-toggle="collapse" href="#proyectoE" aria-expanded="false" role="button" aria-controls="proyectoE">
                         <h3>Electrónica</h3>
                     </a>
                 </div>
-                <div class="collapse show acordeonContenido" id="proyectoE" data-parent="#acordeon1">
+                <div class="collapse acordeonContenido" id="proyectoE" data-parent="#acordeon1">
                     <div class="acordeonTitulo2">
                         <a data-toggle="collapse" href="#proyectoE1" aria-expanded="true" role="button" aria-controls="proyectoE1">
                             <h5>Ecualizador</h5>
@@ -249,11 +249,11 @@
                 </div>
 
                 <div class="acordeonTitulo">
-                    <a data-toggle="collapse" href="#proyectoDW" aria-expanded="false" role="button" aria-controls="proyectoE">
+                    <a data-toggle="collapse" href="#proyectoDW" aria-expanded="true" role="button" aria-controls="proyectoE">
                         <h3>Desarrollo Web</h3>
                     </a>
                 </div>
-                <div class="collapse acordeonContenido" id="proyectoDW">
+                <div class="collapse show acordeonContenido" id="proyectoDW">
                     <div class="acordeonTitulo2">
                         <a data-toggle="collapse" href="#proyectoDW1" aria-expanded="true" role="button" aria-controls="proyectoDW1">
                             <h5>TinDog</h5>
@@ -262,6 +262,7 @@
                     <div class="collapse show acordeonContenido2" id="proyectoDW1">
                         <div class="card card-body">
                             <p class="card-text">Página hecha con HTML y CSS, en donde podrás encontrar la media naranja de tu perro.</p>
+                            <button class="button-enlace" type="button" name="irTindog">Visitar Tindog</button>
                             <div class="row justify-content-center">
                                 <div class="img-p col-lg-12 col-md-12 col-sm-12">
                                     <img src="img/tindog-cod.PNG" alt="Código" title="Código">
@@ -280,6 +281,7 @@
                     <div class="collapse acordeonContenido2" id="proyectoDW2">
                         <div class="card card-body">
                             <p class="card-text">Página hecha con HTML, CSS y JavaScript, que recrea el clásico juego de simon, en donde se tiene que presionar los botones en la secuencia correcta.</p>
+                            <button class="button-enlace" type="button" name="irTindog">Visitar Tindog</button>
                             <div class="row justify-content-center">
                                 <div class="img-p col-lg-6 col-md-12 col-sm-12">
                                     <img src="img/simon-cod.PNG" alt="Código" title="Código">

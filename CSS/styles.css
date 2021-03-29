@@ -1,23 +1,12 @@
-/*Paleta
-    https://material.io/resources/color/#!/?view.left=0&view.right=0&secondary.color=F44336&secondary.text.color=000000&primary.color=7E57C2
-    Oscuro:   #26418f
-    medio:    #5c6bc0
-    Claro:    #8e99f3
-              #f5f5f5
+/* ************ Reset CSS ************** */
+:root {
+    --main-color: #002366;
+    --second-color: #CAF0F8;
+    --text-color: #7DF9FF;
+    --main-modal-color: rgba(202, 240, 248, 0.95);
+    --second-modal-color: rgba(34, 34, 34, 0.95);
+}
 
-              #E86100
-              #010B13
-              #F8F8FF
-              #757575
-
-*/
-/*PALETAS
-    #03045E        #010B13
-    #0077B6        #FF4F00
-    #00B4D8        #FF7800
-    #90E0EF        #F8D568
-    #CAF0F8        #F8F8FF
-*/
 body {
     margin: 0;
     padding: 0;
@@ -30,7 +19,7 @@ body {
 h1, h2 {
     margin: 0;
     font-family: 'Patua One', cursive;
-    color: #7DF9FF;
+    color: var(--text-color);
 }
 
 p {
@@ -39,7 +28,7 @@ p {
 
 /***************************** Contenedores ***********************************/
 .contenedor1 {
-    /* background-color: #CAF0F8; */
+    /* background-color: var(--second-color); */
     background-color: rgba(202, 240, 248, 0.95);
     /* display: flex; */
     padding: 90px 120px;
@@ -48,38 +37,35 @@ p {
 
 /************************** Barra de navegación *****************************/
 .barraNavegación {
-    display: flex;
-    margin: 0;
-    padding: 0 30px;
-    overflow: hidden;
     align-items: center;
-    /* background-color: #002366; */
     background-color: rgba(0, 35, 102, 0.8);
+    display: flex;
+    flex-direction: row;
     height: 70px;
     justify-content: space-between;
-    /* overflow: hidden; */
+    margin: 0;
+    overflow: hidden;
+    padding: 0 30px;
     position: fixed;
     transition: ease-in-out 0.5s;
-    z-index: 100;
     width: 100%;
+    z-index: 100;
+    /* background-color: var(--main-color); */
+    /* overflow: hidden; */
 }
+nav .logo{
 
+}
 .logo>a>img {
     height: 50px;
     /* margin-left: 30px; */
 }
 
-/* .barraNavegación>.barraNavegación2 {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-} */
+nav .enlace-header{
 
+}
 .enlace-header>a {
-    color: #7DF9FF;
+    color: var(--text-color);
     font-size: 1.3rem;
     padding: 25px 16px;
     text-align: center;
@@ -94,7 +80,7 @@ p {
 
 .hamburger {
     display: none;
-    color: #7DF9FF;
+    color: var;
 }
 .hamburger:hover{
     cursor: pointer;
@@ -120,9 +106,9 @@ p {
 .imagenIzquierda>img {
     height: 160px;
     width: 160px;
-    background-color: #CAF0F8;
+    background-color: var(--second-color);
     border-radius: 50%;
-    border: 10px solid #002366;
+    border: 10px solid var(--main-color);
     position: relative;
     left: 60px;
     bottom: 60px;
@@ -137,7 +123,8 @@ p {
 }
 
 .titulos {
-    background-color: #002366;
+    background-color: var(--main-color);
+    color: var(--text-color);
     /* background-color: rgba(0, 35, 102, 0.8); */
 }
 
@@ -172,9 +159,9 @@ p {
 .imagenDerecha>img {
     height: 160px;
     width: 160px;
-    background-color: #CAF0F8;
+    background-color: var(--second-color);
     border-radius: 50%;
-    border: 10px solid #002366;
+    border: 10px solid var(--main-color);
     position: absolute;
     right: 30px;
 }
@@ -280,7 +267,7 @@ p {
 }
 
 .acordeonTitulo{
-    background-color: #002366;
+    background-color: var(--main-color);
     /* border-radius: 8px; */
     border: 1.3px solid #00153D;
 }
@@ -294,7 +281,7 @@ p {
 }
 .acordeonTitulo>a{
     text-decoration: none;
-    color: #7DF9FF;
+    color: var(--text-color);
     text-align: center;
 }
 .acordeonTitulo>a>h3{
@@ -327,12 +314,18 @@ p {
 #img-p-tindog>img{
     height: 100%;
 }
+
+.button-enlace{
+    text-decoration: none;
+    background-color: inherit;
+}
+
 /***************************** Pasatiempos ************************************/
 .contenedorPasatiempos{
 
 }
 .pasatiempo{
-    /* border: 8px solid #002366; */
+    /* border: 8px solid var(--main-color); */
     background-color: #f7f7f7;
     border: 1.3px solid #000;
 }
@@ -378,7 +371,7 @@ p {
 
 /******************************** Footer **************************************/
 .contenedor2 {
-    background-color: #002366;
+    background-color: var(--main-color);
     /* display: flex; */
     padding: 60px 120px;
     justify-content: space-evenly;
@@ -390,7 +383,7 @@ p {
     /* height: 100px; */
     text-align: center;
     align-content: center;
-    color: #7DF9FF;
+    color: var(--text-color);
     margin: 0.5rem 0;
 }
 
@@ -462,7 +455,7 @@ p {
     .imagenIzquierda>img {
         height: 120px;
         width: 120px;
-        border: 8px solid #002366;
+        border: 8px solid var(--main-color);
         left: 10px;
         bottom: 42px;
     }
@@ -494,7 +487,7 @@ p {
     .imagenDerecha>img {
         height: 120px;
         width: 120px;
-        border: 8px solid #002366;
+        border: 8px solid var(--main-color);
         right: 10px;
     }
 
