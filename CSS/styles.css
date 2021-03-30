@@ -302,6 +302,29 @@ nav .enlace-header{
     padding: 10px 0;
     margin: 0;
 }
+
+.project-description{
+    text-align: center;
+}
+
+.btn-proyectos{
+    display: none;
+    border-radius: 10px;
+    border: 1px solid #35C8E9;
+    text-align: center;
+    text-decoration: none;
+    padding: .7rem;
+    margin: .5rem auto 0;
+    background-color: var(--second-color);
+    color: black;
+
+}
+.btn-proyectos:hover{
+    text-decoration: none;
+    /* font-weight: bold; */
+    color: black;
+    background-color: #edfafd;
+}
 .img-p{
     display: flex;
     align-items: center;
@@ -315,9 +338,6 @@ nav .enlace-header{
     height: 100%;
 }
 
-.button-enlace{
-    display: none;
-}
 
 /***************************** Pasatiempos ************************************/
 .contenedorPasatiempos{
