@@ -1,0 +1,138 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/*------------------------------ Navbar section ------------------------------*/
+
+.navbar{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 0 4rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*------------------------------ Heading section --------------------------*/
+
+.title-section{
+    background-color: #ff4c68;
+}
+.title-text{
+    color: #FFF;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: left;
+}
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+.img-iphone{
+    transform: rotate(30deg);
+    width: 60%;
+    z-index: 0;
+    position: absolute;
+    }
+.btn{
+    margin: 3%;
+}
+/* ------------------------- Features Section -------------------------------*/
+.features{
+    padding: 7% 15%;
+    background-color: #FFFFFF;
+    position:relative;
+    z-index: 1;
+}
+.features-text{
+    padding: 2rem 1rem;
+}
+.features-text>.fas{
+    font-size: 56px;
+    color: #ef8172;
+    padding-bottom: 7px;
+}
+.features-text>.fas:hover{
+    color: #ff4c68;
+}
+
+.features-text>p{
+    color: #8f8f8f;
+}
+
+/*------------------------------ Carrusel ------------------------------------*/
+
+.testimonials{
+    background-color: #EF8172;
+    color: #FFFFFF;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+}
+.press{
+    background-color: #EF8172;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/*------------------------------- Pricing -----------------------------------*/
+
+.pricing{
+    padding: 100px;
+}
+.pricing-column {
+    padding: 3% 2%
+}
+/*--------------------------------- CTA -------------------------------------*/
+.cta{
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 6% 15%;
+}
+.h3-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+/*------------------------------ Footer -------------------------------------*/
+.footer{
+    padding: 3% 15% 0;
+}
+.footer>p{
+    color: gray;
+    padding: 10px;
+}
+.footer-icon{
+    display: block;
+    padding: 10px 15px;
+    color: #000000;
+}
+.footer-icon:hover{
+    color: #ff4c68;
+}
+/*----------------------------- Rsponsive -----------------------------------*/
+@media (max-width:1028px){
+    .title-section{
+        text-align: center;
+    }
+    .img-iphone{
+        position: static;
+        transform: rotate(0);
+    }
+}

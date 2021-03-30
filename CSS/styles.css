@@ -308,13 +308,13 @@ nav .enlace-header{
 }
 
 .btn-proyectos{
-    display: none;
+    /* display: none; */
     border-radius: 10px;
     border: 1px solid #35C8E9;
     text-align: center;
     text-decoration: none;
     padding: .7rem;
-    margin: .5rem auto 0;
+    margin: 1rem auto 0;
     background-color: var(--second-color);
     color: black;
 
