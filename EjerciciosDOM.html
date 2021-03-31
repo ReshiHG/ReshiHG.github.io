@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicios DOM</title>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="CSS/hamburgers.css">
+    <link rel="stylesheet" href="CSS/ejerciciosDOM.css">
+
+</head>
+
+<body data-dark>
+    <header>
+        <h1>Ejercicios del DOM</h1>
+    </header>
+    <div class="contenedorMenu menuInactivo">
+        <div class="menu">
+            <a data-scroll-spy href="#seccion1">Reloj y Alarma</a>
+            <a data-scroll-spy href="#seccion2">Eventos del Teclado</a>
+            <a data-scroll-spy href="#seccion3">Cuenta regresiva</a>
+            <a data-scroll-spy href="#seccion4">Responsive con JavaScript</a>
+            <a data-scroll-spy href="#seccion5">Responsive Tester</a>
+            <a data-scroll-spy href="#seccion6">Detección de dispositivos (User Agent)</a>
+            <a data-scroll-spy href="#seccion7">Detección de la conexión</a>
+            <a data-scroll-spy href="#seccion8">Detección de la cámara web</a>
+            <a data-scroll-spy href="#seccion9">Geolocalización</a>
+            <a data-scroll-spy href="#seccion10">Filtros de búsqueda</a>
+            <a data-scroll-spy href="#seccion11">Sorteo</a>
+            <a data-scroll-spy href="#seccion12">Responsive Slider</a>
+            <a data-scroll-spy href="#seccion13">Sección 13</a>
+            <a data-scroll-spy href="#seccion14">Sección 14</a>
+            <a data-scroll-spy href="#seccion15">Sección 15</a>
+        </div>
+    </div>
+
+    <button class="hamburger hamburger--elastic" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <button class="button-up-container">
+        <span class="fas fa-chevron-up fa-2x"></span>
+    </button>
+
+    <button class="button-dark-light">
+        <i class="fas fa-moon fa-2x"></i>
+        <i class="fas fa-sun fa-2x" style="display: none;"></i>
+    </button>
+
+    <main>
+        <section data-scroll-spy id="seccion1">
+            <div class="contenedorSeccion">
+                <h2>Reloj y Alarma</h2>
+                <div id="reloj"></div>
+                <div>
+                    <button id="activar-reloj">Iniciar Reloj</button>
+                    <button id="desactivar-reloj">Detener Reloj</button>
+                    <button id="activar-alarma">Inicar Alarma</button>
+                    <button id="desactivar-alarma">Detener Alarma</button>
+                </div>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion2">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Eventos del Teclado</h2>
+                </div>
+                <div class="stage">
+                    <div class="ball"></div>
+                </div>
+                <p>Instrucciones:</p>
+                <ul>
+                    <li>Usa las flechas del teclado para mover el circulo</li>
+                    <li>alt + a : Lanzar Alert</li>
+                    <li>alt + c : Lanzar Confirm</li>
+                    <li>alt + p : Lanzar Prompt</li>
+                </ul>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion3">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Cuenta regresiva</h2>
+                </div>
+                <div id="reloj-countdown"></div>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion4">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Responsive con JavaScript</h2>
+                </div>
+                <div id="youtube"></div>
+                <div id="gmaps"></div>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion5">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Responsive Tester</h2>
+                </div>
+                <form id="responsive-tester">
+                    <input name="direccion" type="url" placeholder="URL" required>
+                    <br>
+                    <input name="ancho" type="text" placeholder="Ancho" required>
+                    <br>
+                    <input name="alto" type="text" placeholder="Alto" required>
+                    <br>
+                    <input name="probar" type="submit" value="probar">
+                    <input name="cerrar" type="button" value="cerrar">
+                </form>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion6">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Detección de dispositivos <br> (User Agent)</h2>
+                </div>
+                <div id="user-device"></div>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion7">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Detección de la conexión</h2>
+                </div>
+                <p>Para probarlo desactiva y vuelve a activar tu conexión a internet</p>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion8">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Detección de la cámara web</h2>
+                </div>
+                <video id="webcam" controls></video>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion9">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Geolocalización</h2>
+                </div>
+                <div id="ubicacion"></div>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion10">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Filtros de búsqueda</h2>
+                </div>
+                <input type="search" placeholder="Buscar..." class="card-filter">
+                <article class="cards">
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/nature" alt="Nature">
+                        <figcaption>Nature</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/any" alt="Any">
+                        <figcaption>Any</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/tech" alt="Tech">
+                        <figcaption>Tech</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/animals" alt="Animals">
+                        <figcaption>Animals</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/people" alt="People">
+                        <figcaption>People</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/arch" alt="Architecture">
+                        <figcaption>Architecture</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion11">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Sorteo</h2>
+                </div>
+                <ul class="players">
+                    <li class="player">JavaScript</li>
+                    <li class="player">PHP</li>
+                    <li class="player">JAVA</li>
+                    <li class="player">C</li>
+                    <li class="player">Python</li>
+                    <li class="player">Ruby</li>
+                    <li class="player">Go</li>
+                    <li class="player">Visual Basic</li>
+                    <li class="player">Rust</li>
+                    <li class="player">Perl</li>
+                </ul>
+                <button id="winner-btn" type="button" name="button">Sortear</button>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion12">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Responsive Slider</h2>
+                </div>
+                <div class="slider">
+                    <div class="slider-slides">
+                        <div class="slider-slide active">
+                            <img src="https://placeimg.com/400/400/animals" alt="Animales">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="https://placeimg.com/400/400/tech" alt="Tecnología">
+                        </div>
+                        <div class="slider-slide">
+                            <h4>Comentario 1</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione, incidunt quis id error quasi eligendi molestias dolorem laboriosam fuga distinctio dolor libero, aut. Sed.</p>
+                        </div>
+                        <div class="slider-slide">
+                            <h4>Comentario 2</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima soluta quis aspernatur cum unde. Explicabo, repellendus, et? Ullam, aspernatur, eveniet. Ducimus, nesciunt praesentium facilis et atque modi iusto
+                                corporis vero. Fugiat impedit, id aut.</p>
+                        </div>
+                    </div>
+                    <div class="slider-btns">
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-scroll-spy id="seccion13">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Sección 13</h2>
+                </div>
+            </div>
+        </section>
+        <section data-scroll-spy id="seccion14">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Sección 14</h2>
+                </div>
+            </div>
+        </section>
+        <section data-scroll-spy id="seccion15">
+            <div class="contenedorSeccion">
+                <div class="tituloSeccion">
+                    <h2>Sección 15</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+<!-- Script Local -->
+<script src="JS/ejercicios-DOM.js" type="module" charset="utf-8"></script>
+<!-- Script fontawesome -->
+<script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+
+</html>

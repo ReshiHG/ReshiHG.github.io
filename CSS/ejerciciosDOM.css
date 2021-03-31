@@ -1,0 +1,391 @@
+/* ************ Reset CSS ************** */
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --main-color: #F7DF1E;
+    --second-color: #222;
+    --main-modal-color: rgba(247, 222, 30, 0.95);
+    --second-modal-color: rgba(34, 34, 34, 0.95);
+    --container-width: 1200px;
+}
+
+html {
+    box-sizing: border-box;
+    /* Para que el tamaño de las cajas no exceda su contenedor padre */
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    /* Para un desplazamiento suve del scroll */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /* Evita generar un scroll horizontal si existe desbordamiento horizontal */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/******************** Encabezado ******************/
+header {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 88;
+}
+
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/********************* Menú hamburguesa *****************/
+.hamburger {
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    bottom: 4vh;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    padding: 0;
+    position: fixed;
+    right: 2vw;
+    width: 4rem;
+    z-index: 100;
+}
+
+.contenedorMenu {
+    background-color: var(--second-modal-color);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+    z-index: 99;
+}
+
+.menu {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.menu a {
+    padding: 0.3rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    font-weight: bold;
+    color: var(--second-color);
+    background-color: var(--main-modal-color);
+}
+
+.menuInactivo {
+    top: -200vh;
+    transition: 0.2s ease;
+}
+
+/********************* Scroll Arrow-up *****************/
+.button-up-container {
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    bottom: 4vh;
+    /* display: flex; */
+    display: none;
+    height: 4rem;
+    justify-content: center;
+    padding: 0;
+    position: fixed;
+    right: calc(2vw + 4.5rem);
+    width: 4rem;
+    z-index: 100;
+    border: 0;
+    align-items: center;
+}
+
+.button-up-container:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button-up-container span {
+    color: var(--second-color);
+}
+
+
+/********************* Dark Mode *****************/
+.button-dark-light {
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    bottom: 4vh;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    padding: 0;
+    position: fixed;
+    left: 2vw;
+    width: 4rem;
+    z-index: 100;
+    border: 0;
+    align-items: center;
+}
+
+.button-dark-light:hover {
+    /* opacity: 0.7; */
+    transition: all 0.3s ease;
+    background-color: var(--second-color);
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+/*********************** Secciones **********************/
+.contenedorSeccion {
+    padding: 2rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--container-width);
+    min-height: 70vh;
+    text-align: center;
+}
+
+/**************************** Eventos del teclado **************************/
+.stage {
+    display: flex;
+    min-height: 50vh;
+    background-color: var(--second-color);
+}
+
+.ball {
+    margin: auto;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************** DARK THEME **************************************/
+.darkMode{
+    color: var(--main-color);
+    background-color: var(--second-color);
+}
+
+
+
+/***************************    Network Status    *****************************/
+
+.online,.offline{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #32cd32;
+    color: #FFF;
+}
+.offline{
+    background-color: #FE2712;
+}
+
+
+/****************************    SearchFilters    ****************************/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.card{
+    background-color: var(--second-color);
+    color: var(--main-color);
+    transition: all 0.3s ease-out;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card figcaption{
+    padding: 1rem;
+}
+
+.filter{
+    /* display: none; */
+    visibility: hidden;;
+    opacity: 0;
+    order: 1;
+}
+
+
+/*************************** Responsive Slider ***************************/
+
+
+.slider{
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.slider-slides{
+    position: relative;
+    height: 400px;
+}
+
+.slider-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slider-slide img{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.slider-slide h4{
+    padding-top: 10rem;
+}
+
+.slider-slide p{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.slider-slide.active{
+    opacity: 1;
+    /* visibility: visible; */
+}
+
+.slider-btns{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.slider a{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    /* border: thin solid #000; */
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3 ease;
+}
+
+.slider a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    /* color: #4d4d4d; */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/********************************* Scroll Spy *********************************/
+@media screen and (min-width:1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 4rem auto;
+        grid-template-areas:
+        "header header"
+        "Menu main";
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .contenedorMenu{
+        grid-area: Menu;
+        position:sticky;
+        top: 4rem;
+        background-color: var(--second-color);
+        height: 89vh;
+        overflow-y: scroll;
+    }
+
+    .menu {
+        /* justify-content: start; */
+        text-align:left;
+    }
+
+    .menu a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .menu a:hover{
+        font-weight: bold;
+    }
+
+    .button-dark-light {
+        right: 2vw;
+        left: auto;
+    }
+
+}

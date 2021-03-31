@@ -1,0 +1,22 @@
+const d = document,
+    n = navigator;
+
+export function webCam(id) {
+    const $video = d.getElementById(id);
+
+    // console.log(n.mediaDevices.getUserMedia);
+
+    if (n.mediaDevices.getUserMedia) {
+        n.mediaDevices
+            .getUserMedia({video: true,audio: true})
+            .then((stream) => {
+                console.log(stream);
+                $video.srcObject = stream;
+                $video.play();
+            })
+            .catch((err) => {
+                $video.insertAdjacentHTML("afterend",`<p><mark>${err}</m<rk></p>`);
+                console.log(`¡Sucedio el siguiente error: ${err}!`);
+            });
+    }
+}
