@@ -1,5 +1,5 @@
 import hamburgerMenu from "./DOM/Hamburger.js";
-import {digitalClock,alarm} from "./DOM/Reloj-alarma.js";
+import * as digitalClock from "./DOM/Reloj-alarma.js";
 import {shortcuts,moveBall} from "./DOM/teclado.js";
 import {countdown} from "./DOM/cuenta-regresiva.js";
 import {scrollUp} from "./DOM/scroll-up.js";
