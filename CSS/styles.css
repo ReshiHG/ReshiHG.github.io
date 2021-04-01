@@ -80,7 +80,7 @@ nav .enlace-header{
 
 .hamburger {
     display: none;
-    color: var;
+    color: var(--second-color);
 }
 .hamburger:hover{
     cursor: pointer;
