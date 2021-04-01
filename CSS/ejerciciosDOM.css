@@ -13,10 +13,32 @@ html {
     box-sizing: border-box;
     /* Para que el tamaño de las cajas no exceda su contenedor padre */
     font-family: var(--main-font);
-    font-size: var(--font-size);
+
+
+    /* WARNING: Correción temporal vista adaptable */
+        font-size: 2rem;
+        /* font-size: var(--font-size); ORIGINAL*/
+    /* WARNING: Correción temporal vista adaptable */
+
+
+
     scroll-behavior: smooth;
     /* Para un desplazamiento suve del scroll */
 }
+
+
+
+
+
+/* WARNING: Correción temporal vista adaptable */
+
+button,input,i,.hamburger-box{
+    font-size: 1rem;
+}
+/* WARNING: Correción temporal vista adaptable */
+
+
+
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -347,6 +369,17 @@ header h1 {
         "header header"
         "Menu main";
     }
+
+
+        /* WARNING: Correción temporal vista adaptable */
+        html{
+            font-size: 1rem;
+        }
+        /* WARNING: Correción temporal vista adaptable */
+
+
+
+
 
     main{
         grid-area: main;
