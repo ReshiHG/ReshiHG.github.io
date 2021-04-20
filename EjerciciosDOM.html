@@ -19,21 +19,21 @@
     </header>
     <div class="contenedorMenu menuInactivo">
         <div class="menu">
-            <a data-scroll-spy href="#seccion1">Reloj y Alarma</a>
-            <a data-scroll-spy href="#seccion2">Eventos del Teclado</a>
-            <a data-scroll-spy href="#seccion3">Cuenta regresiva</a>
-            <a data-scroll-spy href="#seccion4">Responsive con JavaScript</a>
-            <a data-scroll-spy href="#seccion5">Responsive Tester</a>
-            <a data-scroll-spy href="#seccion6">Detección de dispositivos (User Agent)</a>
-            <a data-scroll-spy href="#seccion7">Detección de la conexión</a>
-            <a data-scroll-spy href="#seccion8">Detección de la cámara web</a>
-            <a data-scroll-spy href="#seccion9">Geolocalización</a>
-            <a data-scroll-spy href="#seccion10">Filtros de búsqueda</a>
-            <a data-scroll-spy href="#seccion11">Sorteo</a>
-            <a data-scroll-spy href="#seccion12">Responsive Slider</a>
-            <a data-scroll-spy href="#seccion13">Sección 13</a>
-            <a data-scroll-spy href="#seccion14">Sección 14</a>
-            <a data-scroll-spy href="#seccion15">Sección 15</a>
+            <a data-scroll-spy class="menuElement" href="#seccion1">Reloj y Alarma</a>
+            <a data-scroll-spy class="menuElement" href="#seccion2">Eventos del Teclado</a>
+            <a data-scroll-spy class="menuElement" href="#seccion3">Cuenta regresiva</a>
+            <a data-scroll-spy class="menuElement" href="#seccion4">Responsive con JavaScript</a>
+            <a data-scroll-spy class="menuElement" href="#seccion5">Responsive Tester</a>
+            <a data-scroll-spy class="menuElement" href="#seccion6">Detección de dispositivos (User Agent)</a>
+            <a data-scroll-spy class="menuElement" href="#seccion7">Detección de la conexión</a>
+            <a data-scroll-spy class="menuElement" href="#seccion8">Detección de la cámara web</a>
+            <a data-scroll-spy class="menuElement" href="#seccion9">Geolocalización</a>
+            <a data-scroll-spy class="menuElement" href="#seccion10">Filtros de búsqueda</a>
+            <a data-scroll-spy class="menuElement" href="#seccion11">Sorteo</a>
+            <a data-scroll-spy class="menuElement" href="#seccion12">Responsive Slider</a>
+            <a data-scroll-spy class="menuElement" href="#seccion13">Video inteligente</a>
+            <a data-scroll-spy class="menuElement" href="#seccion14">Validaciones de formulario</a>
+            <a data-scroll-spy class="menuElement" href="#seccion15">Narrador</a>
         </div>
     </div>
 
@@ -247,22 +247,73 @@
         <section data-scroll-spy id="seccion13">
             <div class="contenedorSeccion">
                 <div class="tituloSeccion">
-                    <h2>Sección 13</h2>
+                    <h2>Video Inteligente</h2>
                 </div>
+                <video data-smart-video src="assets/Ducks.mp4" muted controls loop></video>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <video data-smart-video src="assets/Ducks.mp4" muted controls loop></video>
             </div>
         </section>
         <section data-scroll-spy id="seccion14">
             <div class="contenedorSeccion">
                 <div class="tituloSeccion">
-                    <h2>Sección 14</h2>
+                    <h2>Validaciones de formulario</h2>
                 </div>
+                <form class="contact-form" target="_blank" action="https://formsubmit.co/jricardo.navarros@gmail.com" method="POST">
+                    <legend>Envía tus comentarios</legend>
+
+                    <label for="inputName">Nombre</label>
+                    <input id="inputName" type="text" name="name" placeholder="Nombre" title="Solo se aceptan letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+
+                    <label for="inputEmail">E-mail</label>
+                    <input id="inputEmail" type="email" name="email" placeholder="correo@ejemplo.com" title="Ingresa un correo válido" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+
+                    <label for="inputSubject">Asunto</label>
+                    <input id="inputSubject" type="text" name="subject" placeholder="Asunto" title="Escribe el asunto" required>
+
+                    <label for="textareaComments">Comentarios</label>
+                    <textarea id="textareaComments" name="comments" rows="8" cols="80" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" required data-pattern="^.{1,255}$"></textarea>
+
+                    <!-- Para evitar bots con reCaptcha -->
+                    <!-- <input type="text" name="_honey" style="display:none"> -->
+
+                    <input type="submit" value="Enviar">
+                    <div class="contact-form-loader none">
+                        <img src="assets/load.svg" alt="Cargando">
+                    </div>
+                    <div class="contact-form-response none">
+                        <p>¡Los datos han sido enviados con éxito!</p>
+                    </div>
+                </form>
             </div>
         </section>
         <section data-scroll-spy id="seccion15">
             <div class="contenedorSeccion">
                 <div class="tituloSeccion">
-                    <h2>Sección 15</h2>
+                    <h2>Narrador</h2>
                 </div>
+                <select id="speech-select">
+                    <option value="">--- Elige una voz ----</option>
+                </select>
+                <br><br>
+                <textarea id="speech-text" rows="5" cols="50" placeholder="Ecribe el texto a narrar..."></textarea>
+                <br><br>
+                <button id="speech-btn">Leer</button>
+                <br><br>
+                <p>Si no aparecen las opciones de narrador, recarga la página.</p>
             </div>
         </section>
     </main>
@@ -270,7 +321,7 @@
 </body>
 
 <!-- Script Local -->
-<script src="JS/ejercicios-DOM.js" type="module" type="text/javascript" charset="utf-8"></script>
+<script src="JS/ejercicios-DOM.js" type="module" charset="utf-8"></script>
 <!-- Script fontawesome -->
 <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
 

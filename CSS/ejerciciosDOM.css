@@ -1,7 +1,7 @@
 /* ************ Reset CSS ************** */
 :root {
     --main-font: 'Roboto', sans-serif;
-    --font-size: 16px;
+    --font-size: 1rem;
     --main-color: #F7DF1E;
     --second-color: #222;
     --main-modal-color: rgba(247, 222, 30, 0.95);
@@ -15,17 +15,15 @@ html {
     font-family: var(--main-font);
 
 
-    /* WARNING: Correción temporal vista adaptable */
-        font-size: 2rem;
-        /* font-size: var(--font-size); ORIGINAL*/
-    /* WARNING: Correción temporal vista adaptable */
-
+/* WARNING: Correción temporal vista adaptable */
+    font-size: 2rem;
+    /* font-size: var(--font-size); ORIGINAL*/
+/* WARNING: Correción temporal vista adaptable */
 
 
     scroll-behavior: smooth;
     /* Para un desplazamiento suve del scroll */
 }
-
 
 
 
@@ -106,7 +104,7 @@ header h1 {
     text-align: center;
 }
 
-.menu a {
+.menuElement {
     padding: 0.3rem;
     width: inherit;
     display: block;
@@ -116,7 +114,13 @@ header h1 {
     transition: all 0.3s ease;
 }
 
-.menu a:hover {
+.menuElement:hover {
+    font-weight: bold;
+    color: var(--second-color);
+    background-color: var(--main-modal-color);
+}
+
+.menuElementActive{
     font-weight: bold;
     color: var(--second-color);
     background-color: var(--main-modal-color);
@@ -190,7 +194,7 @@ header h1 {
     margin: 0 auto;
     width: 100%;
     max-width: var(--container-width);
-    min-height: 70vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -350,14 +354,10 @@ header h1 {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
+/*********************************** Video ***********************************/
+video{
+    width: 100%;
+}
 
 /********************************* Scroll Spy *********************************/
 @media screen and (min-width:1024px) {
@@ -371,12 +371,11 @@ header h1 {
     }
 
 
-        /* WARNING: Correción temporal vista adaptable */
-        html{
-            font-size: 1rem;
-        }
-        /* WARNING: Correción temporal vista adaptable */
-
+    /* WARNING: Correción temporal vista adaptable */
+    html{
+        font-size: 1rem;
+    }
+    /* WARNING: Correción temporal vista adaptable */
 
 
 
@@ -421,4 +420,85 @@ header h1 {
         left: auto;
     }
 
+}
+
+
+/*************************** ContactForm Validations ***************************/
+
+.contact-form{
+    --form-ok-color: #32cd32;
+    --form-error-color: #FE2712;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.contact-form > *{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact-form>label{
+    text-align: left;
+    padding-left: 0;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form>legend,
+.contact-form-response{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.contact-form input[type="submit"]{
+    margin: 1rem auto;
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form *::placeholder{
+    color: #000;
+}
+
+.contact-form [required]:valid{
+    border:thin solid var(--form-ok-color);
+}
+
+.contact-form [required]:invalid{
+    border: thin solid var(--form-error-color);
+}
+
+.contact-form-error{
+    /* margin-top: -1rem; */
+    font-size: 90%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+}
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+.none{
+    display: none;
+}
+
+/* Narrador */
+
+textarea{
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #000;
 }
